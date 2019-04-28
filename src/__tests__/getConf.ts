@@ -4,7 +4,7 @@ import tempy from 'tempy'
 import getConf from '../getConf'
 
 const testConf = { husky: { foo: 'bar' } }
-
+//brizer: the unit test for get config
 describe('getConf', () => {
   it('should return default conf', () => {
     const tempDir = tempy.directory()

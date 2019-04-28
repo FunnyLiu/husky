@@ -6,6 +6,7 @@ interface IConf {
 }
 
 export default function getConf(dir: string): IConf {
+  //brizer: use cosmicconfig to find husky config
   const explorer = cosmiconfig('husky')
   const { config = {} } = explorer.searchSync(dir) || {}
 

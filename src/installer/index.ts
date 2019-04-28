@@ -131,6 +131,7 @@ export function install(
   }
 
   // Get conf from package.json or .huskyrc
+  //brizer: get config
   const conf = getConf(userPkgDir)
   // Get directory containing .git directory or in the case of Git submodules, the .git file
   const gitDirOrFile = findUp.sync('.git', { cwd: userPkgDir })
